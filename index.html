@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C490Z499E6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C490Z499E6');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive  Portfolio Website With Sidbar Navigation </title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <h2>Saver-Mind </h2>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        </div>
+
+        <div class="menu-icon">
+            <i class="fa fa-bars "></i>
+
+        </div>
+        
+    </div>
+    <div class="header">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="money.jpg" at="">
+                    <h2></h2>
+                </div>
+                <ul class="nav">
+                    <li><a href="#">Buy More, Save More</a></li>
+                    <li><a href="#">Dont worry about budgeting!</a></li>
+                    <li><a href="#">Plans tailored to achieve   </a></li>
+                    <li><a href="#">your finacial goals</a></li>
+                    <li><a href="#">Offers exclusively for you!</a></li>
+                    
+
+                </ul>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                </div>
+            </div>
+            <div class="hero-content">
+                <h4>Welcome</h4>
+                <h1>We are <span class="input"></span></h1>
+                <h4>A budgeting app that tracks your spending,
+                    tailors personalized savings plans, 
+                    and offers exclusive discounts and deals to help you save smarter.</h4>
+                <a href="registerNow.html" class="btn">Register Now</a>
+            </div>
+        </div>
+
+    </div>
+    <!--applying typing effect for title content-- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["Saver-Mind", "A budgeting App", "Your key to buy more and save more"],
+            typeSpeed: 65,
+            backSpeed: 55,
+            loop: true
+        })
+        /* displaying topnavbar on small screen size*/
+
+        let menuicon = document.querySelector(".menu-icon");
+        let navbar = document.querySelector(".navbar");
+        let icon = document.querySelector(".menu-icon i");
+
+        menuicon.addEventListener("click", function () {
+            navbar.classList.toggle("open");
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            }
+            else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+
+        })
+
+
+
+
+    </script>
+</body>
+</html>     
